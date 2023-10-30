@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Calculator</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="excel.html">Excel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body class="light-theme">
+
+
+    <h1>Excel Calculator</h1>
+    <form id="excelForm">
+        <label for="numbers">Enter numbers (separated by spaces):</label>
+        <input type="text" id="numbers" required>
+        
+        <label>Choose Excel function:</label>
+        <input type="radio" name="excelFunction" value="AutoSum" checked> AutoSum
+        <input type="radio" name="excelFunction" value="Average"> Average
+        <input type="radio" name="excelFunction" value="Max"> Max
+        <input type="radio" name="excelFunction" value="Min"> Min
+
+        <button type="button" id="calculateButton">Calculate</button>
+    </form>
+    <button id="darkThemeButton">Dark Theme</button>
+    <button id="lightThemeButton">Light Theme</button>
+
+    <div id="output"></div>
+    <script src="js/script.js"></script>
+
+    
+
+    <footer>
+        <p>
+            ILAC & EFREI - HTML, CSS, and JavaScript Assignment - Margot Vanfleteren 
+        </p>
+    </footer>
+</body>
+</html>
