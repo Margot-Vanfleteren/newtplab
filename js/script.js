@@ -23,11 +23,16 @@ function userForm() {
     userInfoDisplay.innerHTML = outputMessage;
 }
 
-document.getElementById("main-form").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting and refreshing the page
-    userForm(); // Call the userForm function
-});
 
+
+if (document.getElementById("main-form") === null || document.getElementById("main-form") === undefined) {
+}
+else {
+  document.getElementById("main-form").addEventListener("submit", function (event) {
+  event.preventDefault() // Prevent the form from submitting and refreshing the page
+  UseForm() 
+});
+}
 
 
 
@@ -103,4 +108,3 @@ document.getElementById("lightThemeButton").addEventListener("click", function (
     document.body.classList.remove("dark-theme");
     document.body.classList.add("light-theme");
 });
-
